@@ -1,0 +1,15 @@
+type Query {
+    properties: [Property]
+    propertyByCode(propertyCode: String!): Property!
+}
+
+type Mutation {
+    addPropertyUnitToProperty(propertyUnitInput: PropertyUnitTypesInput, propertyCode: String!): PropertyUnitType!
+    editPropertyUnitOfProperty(propertyUnitInput: PropertyUnitTypesInput, propertyCode: String!): PropertyUnitType!
+    deletePropertyUnitOfProperty(propertyUnitCode: String!, propertyCode: String!): String!
+}
+
+type Subscription {
+    livePropertyCountForAll: ReportingObject!
+}
+
