@@ -19,6 +19,7 @@ type PropertyUnitType implements Node {
 }
 
 type ReportingObject {
+    # the total number of unitTypes
     count: Int!
 }
 
